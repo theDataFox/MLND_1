@@ -202,7 +202,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Import libraries necessary for this project</span>
@@ -288,14 +288,14 @@ Name: MEDV, dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Minimum price of the data</span>
-<span class="n">minimum_price</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+<span class="n">minimum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c"># TODO: Maximum price of the data</span>
-<span class="n">maximum_price</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
+<span class="n">maximum_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
 
 <span class="c"># TODO: Mean price of the data</span>
 <span class="n">mean_price</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">prices</span><span class="p">)</span>
@@ -399,7 +399,7 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Import &#39;r2_score&#39;</span>
@@ -465,7 +465,7 @@ Standard deviation of prices: $165,171.13
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Calculate the performance of this model</span>
@@ -525,7 +525,7 @@ The R<sup>2</sup> value is <strong>0.923</strong> which indicates that the depen
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Import &#39;train_test_split&#39;</span>
@@ -533,7 +533,7 @@ The R<sup>2</sup> value is <strong>0.923</strong> which indicates that the depen
 <span class="kn">from</span> <span class="nn">sklearn.cross_validation</span> <span class="kn">import</span> <span class="n">train_test_split</span> 
 
 <span class="c"># TODO: Shuffle and split the data into training and testing subsets</span>
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="c"># Success</span>
 <span class="k">print</span> <span class="s">&quot;Training and testing split was successful.&quot;</span>
@@ -2321,7 +2321,7 @@ The training set is split into k smaller sets and then the following procedure i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># TODO: Import &#39;make_scorer&#39;, &#39;DecisionTreeRegressor&#39;, and &#39;GridSearchCV&#39;</span>
@@ -2383,7 +2383,7 @@ The training set is split into k smaller sets and then the following procedure i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Fit the training data to the model using grid search</span>
@@ -2467,7 +2467,7 @@ The training set is split into k smaller sets and then the following procedure i
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="c"># Produce a matrix for client data</span>
@@ -2490,9 +2490,9 @@ The training set is split into k smaller sets and then the following procedure i
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Predicted selling price for Client 1&apos;s home: $404,682.35
-Predicted selling price for Client 2&apos;s home: $222,785.29
-Predicted selling price for Client 3&apos;s home: $922,800.00
+<pre>Predicted selling price for Client 1&apos;s home: $391,183.33
+Predicted selling price for Client 2&apos;s home: $189,123.53
+Predicted selling price for Client 3&apos;s home: $942,666.67
 </pre>
 </div>
 </div>
@@ -2507,9 +2507,9 @@ Predicted selling price for Client 3&apos;s home: $922,800.00
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong></p>
-<p>Predicted selling price for Client 1's home: <strong>$404,682.35</strong>. This is slightly below the median and mean value but is within one standard deviation of the mean. It is a reasonable estimate considering the minimum and maximum price values of the whole dataset and that the features are in between client 2 and client 3.</p>
-<p>Predicted selling price for Client 2's home: <strong>$222,785.29</strong>. All of the features provided point intuitively to a low price for housing and our prediction matches this. It is higher then the minimum price but one would recommend selling at the the model predicted price.</p>
-<p>Predicted selling price for Client 3's home: <strong>$922,800.00</strong>. All of the features point to a higher price for the house and would comfortably recommend the value provided by the model. Assuming normality of data the price predicted lies within 3 standard deviations and is clearly an expensive property but it is not unreasonable to predict this price.</p>
+<p>Predicted selling price for Client 1's home: <strong>$391,183.33</strong>. This is slightly below the median and mean value but is within one standard deviation of the mean. It is a reasonable estimate considering the minimum and maximum price values of the whole dataset and that the features are in between client 2 and client 3.</p>
+<p>Predicted selling price for Client 2's home: <strong>$189,123.53</strong>. All of the features provided point intuitively to a low price for housing and our prediction matches this. It is higher then the minimum price but one would recommend selling at the the model predicted price.</p>
+<p>Predicted selling price for Client 3's home: <strong>$942,666.67</strong>. All of the features point to a higher price for the house and would comfortably recommend the value provided by the model. Assuming normality of data the price predicted lies within 3 standard deviations and is clearly an expensive property but it is not unreasonable to predict this price.</p>
 
 </div>
 </div>
@@ -2526,7 +2526,7 @@ Predicted selling price for Client 3&apos;s home: $922,800.00
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">vs</span><span class="o">.</span><span class="n">PredictTrials</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">prices</span><span class="p">,</span> <span class="n">fit_model</span><span class="p">,</span> <span class="n">client_data</span><span class="p">)</span>
@@ -2591,8 +2591,8 @@ Range in prices: $73,357.39
 <p>This would mean that inflation has been accounted for and so prices of the houses may model correctly for prices in 2013. However, there are some houses that reach far beyond the maximum $1,024,800.00 of this dataset, as can be seen on Zillow and more than inflation would be need to be considered when converting 1978 prices to 2013 prices.</p>
 <p>There are various other factors to consider during that time period form 1978 to now and the data could not be relied on entirely to predict house prices for 2016. There are many more features that need to be considered such as garages, garden size, proximity to transportation links and crime statistics that would all effect pricing.</p>
 <p>The model has a range of $73,357.39 which one could consider that the model is not robust enough to make consistent predictions.</p>
-<p>The cost of housing in rural enviroments is much cheaper (in general) and so data collected in an urban setting would not be useful to predict in rural areas.</p>
-<p>With all of the above information, one would conclude that the Boston data set should not be used in real a world setting.</p>
+<p>The cost of housing in rural enviroments is much cheaper (in general) and so data collected in an urban setting would not be useful to predict in rural areas. 
+With all of the above information, one would conclude that the Boston data set should not be used in real a world setting.</p>
 
 </div>
 </div>
